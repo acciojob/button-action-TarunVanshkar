@@ -9,7 +9,7 @@ const App = (props) => {
     <div className="App" id="main">
       {/* // Do not alter the main div */}
       {
-        classname === 'show' ? <p id="para">{message}</p> : ''
+        classname === 'show' ? <p id="para" className={classname}>{message}</p> : ''
       }
       <button id="click" onClick={() => classname==='hide' ? setClassname('show') : setClassname('hide')}>Click</button>
     </div>
